@@ -1,0 +1,61 @@
+.carousel {
+    width: 100%;
+height: 50rem;
+    margin: auto;
+    position: relative;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item img {
+object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding-top: 0px;
+    margin-top: -22px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+  }
+  .fa-light{
+    z-index: 1000;
+    margin: 4rem;
+    font-size: 3rem;
+    color: aliceblue;
+  }
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 1;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
